@@ -14,7 +14,7 @@ El entrenamiento funciona escogiendo 3 secciones conocidas (A, B y C), el input 
 
 Capa A | Capa B | Capa C
 -------|--------|--------
-![Capa A](/assets/A.jpg) | ![Capa B](/assets/B.jpg) | ![Capa C](/assets/C.jpg)
+![Capa A](/assets/A.jpg) | ![Capa B](/assets/B.jpg) | No disponible
 
 De esta manera, el generador aprende a crear imágenes de capas intermedias del encéfalo ya que la información de las capas A y C está condensada en la multiplicación de ambas imágenes (X).
 
