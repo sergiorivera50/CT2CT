@@ -22,7 +22,7 @@ CT2CT utiliza 20 imágenes que el modelo jamás ha conocido del propio escáner 
 Todos los parámetros como los PATHS, epochs o slices del escaner pueden ser modificados en las primeras celdas del código (explicado mediante comentarios). El proyecto viene con un escáner por defecto de 240 capas o "slices" y es el que se ha utilizado en todo momento para el desarrollo del modelo.
 
 ## Uso del Software
-Es recomendable utilizar el escaner por defecto (rawIMG, descargar y subir a Drive mediante el PATH: /brain_ct/PATIENT/rawIMG) ya que esto es un proyecto no comercial. Pero si se desea hacer pruebas con otros escáneres habrá que seguir las siguientes instrucciones:
+Es recomendable utilizar el escaner por defecto (rawIMG, descargar carpeta zip incluida en el repositorio y subir a Drive las imágenes al RAW_PATH: /brain_ct/PATIENT/rawIMG) ya que esto es un proyecto no comercial. Pero si se desea hacer pruebas con otros escáneres habrá que seguir las siguientes instrucciones:
   1. Añadir las imágenes a la carpeta rawIMG bajo el nombre /IMG-0001-XXXX.jpg siendo X el número de capa (ej, /IMG-0001-0214.jpg)
   2. Cambiar el parámetro "slices" al número de imágenes previamente introducidas en la carpeta rawIMG.
 
@@ -33,3 +33,8 @@ El código está programado para que su uso sea en el entorno de Google Colabora
 Estos son los parámetros del entorno:
   1. Entorno de ejecución -> Cambiar tipo de entorno de ejecución -> GPU
   2. En caso de que en el entrenamiento desconecte al usuario de la sesión, recomiendo el uso de un autoclicker para que no cese la     actividad y google no te expulse del software.
+
+## Observaciones
+En el proceso del desarollo de este software han surgido algunos temas de interés para el futuro:
+  1. Al juntar todas las capas predecidas de un paciente se puede obtener un escáner de igual resolución que el original con la distinción de que el encéfalo que se representa NO EXISTE! Es un tema interesante ya que la cabeza que se podría extraer en 3D sería del paciente pero al mismo tiempo no es 100% real? Interesante sin más.
+  2. Si las imágenes del escáner original tienen un HUD descriptivo, el software lo tomará como parte de la imagen a predecir e intentará predecir también el texto que la rodea. De esta manera, datos que no cambian y que se muestran, como el nombre del paciente o la fecha del examen son reproducidos a la perfección, pero datos como el número de capa o los milímetros avanzados se ven de manera borrosa ya que no existen esos datos pues son desconocidos para el software y para el humano.
