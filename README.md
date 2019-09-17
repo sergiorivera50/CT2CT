@@ -11,6 +11,9 @@ Una vez el entrenamiento se ha realizado, se puede pedir al modelo predicciones 
 
 ## Entrenamiento
 El entrenamiento funciona escogiendo 3 secciones conocidas (A, B y C), el input para el generador es X (AxC) y el output se compara con el discriminador con B. De esta manera, el generador aprende a crear imágenes de capas intermedias del encéfalo ya que la información de las capas A y C está condensada en la multiplicación de ambas imágenes (X).
+![Capa A](https://raw.githubusercontent.com/sergiorivera50/CT2CT/master/1.png)
+![Capa B](https://raw.githubusercontent.com/sergiorivera50/CT2CT/master/3.png)
+![Capa C](https://raw.githubusercontent.com/sergiorivera50/CT2CT/master/5.png)
 
 El modelo ha sido diseñado para que solo requiera de tan solo 80 imágenes de entrenamiento para que sea útil para la gran mayoría de escaneos CT. 500 epochs han demostrado una gran capacidad de predicción aunque el único inconveniente es el tiempo de computación. Dicho entrenamiento tardó una noche aproximadamente, lo cual es totalmente recomendable si se necesita generar un escáner de alta precisión.
 Por el contrario, si tan solo se quiere aumentar la resolución de la reconstrucción 3D de forma visual, 100 epochs son más que suficientes.
