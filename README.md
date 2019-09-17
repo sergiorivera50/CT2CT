@@ -27,3 +27,9 @@ Es recomendable utilizar el escaner por defecto ya que esto es un proyecto no co
   2. Cambiar el parámetro "slices" al número de imágenes previamente introducidas en la carpeta rawIMG.
 
 El software obtiene como output un escáner totalmente generado en brain_ct/results.
+
+## Google Colaboratory
+El código está programado para que su uso sea en el entorno de Google Colaboratory. En el futuro se realizarán actualizaciones para mejorar la experiencia y que sea más facil el uso del software para usuarios no-desarrolladores.
+Estos son los parámetros del entorno:
+  1. Entorno de ejecución -> Cambiar tipo de entorno de ejecución -> GPU
+  2. En caso de que en el entrenamiento desconecte al usuario de la sesión, recomiendo el uso de un autoclicker para que no cese la     actividad y google no te expulse del software.
