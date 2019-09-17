@@ -1,1 +1,29 @@
-# CT2CT
+# CT2CT: Aumentación de la Resolución de Escáneres de Tomografía Computada (CT)
+
+## Abstracto
+La reconstrucción 3D de encéfalos requiere de realizar un examen CT de Tomografía Computada al paciente para así obtener "capas" o secciones de la cabeza del individuo. Mediante sistemas convencionales se suelen extraer entre 100 y 300 capas por paciente, ya que números superiores implicarían una prolongación de la exposición del paciente a niveles de radiación importantes.
+Mediante el sistema CT2CT (basado en la tecnología Pix2Pix), se consegue aumentar radicalmente el número de capas internas del encéfalo con tan solo el escaneo de unos "key slices" o capas clave que permiten al modelo predecir las capas que no se han escaneado. De esta manera se reduce el tiempo de exposición del paciente a la radicación y se aumenta el número de capas 2D para la reconstrucción 3D del encéfalo.
+
+## Funcionalidad
+El modelo CT2CT obtiene capas intermedias de escaneos CT desconocidas para aumentar la resolución de las reconstrucciones 3D encefálicas sin necesidad de aumentar el tiempo de los exámenes médicos y, por ende, de exposición a la radiación.
+Ya que en el campo de la medicina la precisión es de extrema importancia, el entrenamiento del modelo se ha de repetir cada vez que se trate con un nuevo paciente. Así se consigue que la IA se adapte a los patrones específicos de cada encéfalo sin mezclarlos entre pacientes.
+Una vez el entrenamiento se ha realizado, se puede pedir al modelo predicciones tantas como se deseen de manera que no es necesario repetir el proceso constantemente.
+
+## Entrenamiento
+El entrenamiento funciona escogiendo 3 secciones conocidas (A, B y C), el input para el generador es X (AxC) y el output se compara con el discriminador con B. De esta manera, el generador aprende a crear imágenes de capas intermedias del encéfalo ya que la información de las capas A y C está condensada en la multiplicación de ambas imágenes (X).
+
+El modelo ha sido diseñado para que solo requiera de tan solo 80 imágenes de entrenamiento para que sea útil para la gran mayoría de escaneos CT. 500 epochs han demostrado una gran capacidad de predicción aunque el único inconveniente es el tiempo de computación. Dicho entrenamiento tardó una noche aproximadamente, lo cual es totalmente recomendable si se necesita generar un escáner de alta precisión.
+Por el contrario, si tan solo se quiere aumentar la resolución de la reconstrucción 3D de forma visual, 100 epochs son más que suficientes.
+
+## Evaluación
+CT2CT utiliza 20 imágenes que el modelo jamás ha conocido del propio escáner original.
+
+## Parámetros
+Todos los parámetros como los PATHS, epochs o slices del escaner pueden ser modificados en las primeras celdas del código (explicado mediante comentarios). El proyecto viene con un escáner por defecto de 240 capas o "slices" y es el que se ha utilizado en todo momento para el desarrollo del modelo.
+
+## Observaciones
+Es recomendable utilizar el escaner por defecto ya que esto es un proyecto no comercial. Pero si se desea hacer pruebas con otros escáneres habrá que seguir las siguientes instrucciones:
+  1. Añadir las imágenes a la carpeta rawIMG bajo el nombre /IMG-0001-XXXX.jpg siendo X el número de capa (ej, /IMG-0001-0214.jpg)
+  2. Cambiar el parámetro "slices" al número de imágenes previamente introducidas en la carpeta rawIMG.
+
+El software obtiene como output un escáner totalmente generado en brain_ct/results.
