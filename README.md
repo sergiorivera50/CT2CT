@@ -21,8 +21,8 @@ CT2CT utiliza 20 imágenes que el modelo jamás ha conocido del propio escáner 
 ## Parámetros
 Todos los parámetros como los PATHS, epochs o slices del escaner pueden ser modificados en las primeras celdas del código (explicado mediante comentarios). El proyecto viene con un escáner por defecto de 240 capas o "slices" y es el que se ha utilizado en todo momento para el desarrollo del modelo.
 
-## Observaciones
-Es recomendable utilizar el escaner por defecto ya que esto es un proyecto no comercial. Pero si se desea hacer pruebas con otros escáneres habrá que seguir las siguientes instrucciones:
+## Uso del Software
+Es recomendable utilizar el escaner por defecto (rawIMG, descargar y subir a Drive mediante el PATH: /brain_ct/PATIENT/rawIMG) ya que esto es un proyecto no comercial. Pero si se desea hacer pruebas con otros escáneres habrá que seguir las siguientes instrucciones:
   1. Añadir las imágenes a la carpeta rawIMG bajo el nombre /IMG-0001-XXXX.jpg siendo X el número de capa (ej, /IMG-0001-0214.jpg)
   2. Cambiar el parámetro "slices" al número de imágenes previamente introducidas en la carpeta rawIMG.
 
