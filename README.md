@@ -2,7 +2,7 @@
 
 ## Abstracto
 La reconstrucción 3D de encéfalos requiere de realizar un examen CT de Tomografía Computada al paciente para así obtener "capas" o secciones de la cabeza del individuo. Mediante sistemas convencionales se suelen extraer entre 100 y 300 capas por paciente, ya que números superiores implicarían una prolongación de la exposición del paciente a niveles de radiación importantes.
-Mediante el sistema CT2CT (basado en la tecnología Pix2Pix), se consegue aumentar radicalmente el número de capas internas del encéfalo con tan solo el escaneo de unos "key slices" o capas clave que permiten al modelo predecir las capas que no se han escaneado. De esta manera se reduce el tiempo de exposición del paciente a la radicación y se aumenta el número de capas 2D para la reconstrucción 3D del encéfalo.
+Mediante el sistema CT2CT (basado en la tecnología Pix2Pix), se consigue aumentar radicalmente el número de capas internas del encéfalo con tan solo el escaneo de unos "key slices" o capas clave que permiten al modelo predecir las capas que no se han escaneado. De esta manera se reduce el tiempo de exposición del paciente a la radiación y se aumenta el número de capas 2D para la reconstrucción 3D del encéfalo.
 
 ## Funcionalidad
 El modelo CT2CT obtiene capas intermedias de escaneos CT desconocidas para aumentar la resolución de las reconstrucciones 3D encefálicas sin necesidad de aumentar el tiempo de los exámenes médicos y, por ende, de exposición a la radiación.
@@ -26,7 +26,7 @@ El modelo ha sido diseñado para que solo requiera de tan solo 80 imágenes de e
 Por el contrario, si tan solo se quiere aumentar la resolución de la reconstrucción 3D de forma visual, 100 epochs son más que suficientes.
 
 ## Evaluación
-CT2CT utiliza 20 imágenes que el modelo jamás ha conocido del propio escáner original.
+CT2CT utiliza 20 imágenes para la evaluación del modelo que jamás han sido previamente conocidas extraídas del propio escáner original.
 
 ## Parámetros
 Todos los parámetros como los PATHS, epochs o slices del escaner pueden ser modificados en las primeras celdas del código (explicado mediante comentarios). El proyecto viene con un escáner por defecto de 240 capas o "slices" y es el que se ha utilizado en todo momento para el desarrollo del modelo.
