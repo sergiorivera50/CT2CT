@@ -20,7 +20,7 @@ De esta manera, el generador aprende a crear imágenes de capas intermedias del 
 
 Input AxC | Predicción (100 epochs) | Predicción (500 epochs)
 ----------|-------------------------|------------------------
-![Imágen AxC](/assets/AxC.jpg) | ![Predicción](/assets/B_prediction.jpg) | No disponible
+![Imagen AxC](/assets/AxC.jpg) | ![Predicción](/assets/B_prediction.jpg) | No disponible
 
 El modelo ha sido diseñado para que solo requiera de tan solo 80 imágenes de entrenamiento para que sea útil para la gran mayoría de escaneos CT. 500 epochs han demostrado una gran capacidad de predicción aunque el único inconveniente es el tiempo de computación. Dicho entrenamiento tardó una noche aproximadamente, lo cual es totalmente recomendable si se necesita generar un escáner de alta precisión.
 Por el contrario, si tan solo se quiere aumentar la resolución de la reconstrucción 3D de forma visual, 100 epochs son más que suficientes.
@@ -46,11 +46,11 @@ Estos son los parámetros del entorno:
 
 ## Observaciones
 En el proceso del desarollo de este software han surgido algunos temas de interés para el futuro:
-  Imágen 1: Al juntar todas las capas predecidas de un paciente se puede obtener un escáner de igual resolución que el original con la distinción de que el encéfalo que se representa NO EXISTE! Es un tema interesante ya que la cabeza que se podría extraer en 3D sería del paciente pero al mismo tiempo no es 100% real? Interesante sin más.
+  Imagen 1: Al juntar todas las capas predecidas de un paciente se puede obtener un escáner de igual resolución que el original con la distinción de que el encéfalo que se representa NO EXISTE! Es un tema interesante ya que la cabeza que se podría extraer en 3D sería del paciente pero al mismo tiempo no es 100% real? Interesante sin más.
   La recreación 3D de las facciones de la cara serían otro tema de interés ya que se trataría de un rostro que NO EXISTE pese a que está basado en el del paciente original.
-  Imágen 2: Si las imágenes del escáner original tienen un HUD descriptivo, el software lo tomará como parte de la imagen a predecir e intentará predecir también el texto que la rodea. De esta manera, datos que no cambian y que se muestran, como el nombre del paciente o la fecha del examen son reproducidos a la perfección, pero datos como el número de capa o los milímetros avanzados se ven de manera borrosa ya que no existen esos datos pues son desconocidos para el software y para el humano.
+  Imagen 2: Si las imágenes del escáner original tienen un HUD descriptivo, el software lo tomará como parte de la imagen a predecir e intentará predecir también el texto que la rodea. De esta manera, datos que no cambian y que se muestran, como el nombre del paciente o la fecha del examen son reproducidos a la perfección, pero datos como el número de capa o los milímetros avanzados se ven de manera borrosa ya que no existen esos datos pues son desconocidos para el software y para el humano.
   
-  | Imágen 1 | Imágen 2 |
+  | Imagen 1 | Imagen 2 |
   | --- | --- |
   | Reconstrucción 3D Predecida | HUD "borroso" (esquina sup. izqda.) |
   | ![Cara predecida](/assets/face.jpg) | ![HUD borroso](/assets/B_prediction.jpg) |
