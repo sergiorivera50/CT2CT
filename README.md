@@ -20,7 +20,7 @@ De esta manera, el generador aprende a crear imágenes de capas intermedias del 
 
 Input AxC | Predicción (100 epochs) | Predicción (500 epochs)
 ----------|-------------------------|------------------------
-![Imagen AxC](/assets/AxC.jpg) | ![Predicción](/assets/B_prediction.jpg) | No disponible
+![Imagen AxC](/assets/AxC.jpg) | ![Predicción](/assets/B_prediction.jpg) | Imagen No Disponible
 
 El modelo ha sido diseñado para que solo requiera de tan solo 80 imágenes de entrenamiento para que sea útil para la gran mayoría de escaneos CT. 500 epochs han demostrado una gran capacidad de predicción aunque el único inconveniente es el tiempo de computación. Dicho entrenamiento tardó una noche aproximadamente, lo cual es totalmente recomendable si se necesita generar un escáner de alta precisión.
 Por el contrario, si tan solo se quiere aumentar la resolución de la reconstrucción 3D de forma visual, 100 epochs son más que suficientes.
