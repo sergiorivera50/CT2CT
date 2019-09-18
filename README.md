@@ -47,4 +47,6 @@ Estos son los parámetros del entorno:
 ## Observaciones
 En el proceso del desarollo de este software han surgido algunos temas de interés para el futuro:
   1. Al juntar todas las capas predecidas de un paciente se puede obtener un escáner de igual resolución que el original con la distinción de que el encéfalo que se representa NO EXISTE! Es un tema interesante ya que la cabeza que se podría extraer en 3D sería del paciente pero al mismo tiempo no es 100% real? Interesante sin más.
+  La recreación 3D de las facciones de la cara serían otro tema de interés ya que se trataría de un rostro que NO EXISTE pese a que está basado en el del paciente original.
+  ![Cara](/assets/face.jpg)
   2. Si las imágenes del escáner original tienen un HUD descriptivo, el software lo tomará como parte de la imagen a predecir e intentará predecir también el texto que la rodea. De esta manera, datos que no cambian y que se muestran, como el nombre del paciente o la fecha del examen son reproducidos a la perfección, pero datos como el número de capa o los milímetros avanzados se ven de manera borrosa ya que no existen esos datos pues son desconocidos para el software y para el humano.
