@@ -1,3 +1,7 @@
+# CT2CT by Sergio Rivera
+- If you want to read the Spanish version [click here](#spanish-version)
+- Si quieres leer la versión en Español [haz click aquí](#spanish-version)
+
 # ENGLISH VERSION
 # CT2CT: Resolution Augmentation of Computed Tomography Scans
 
