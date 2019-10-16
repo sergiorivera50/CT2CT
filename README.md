@@ -3,7 +3,7 @@
 - Si quieres leer la versión en Español [haz click aquí](#spanish-version)
 
 # ENGLISH VERSION
-# CT2CT: Resolution Augmentation of Computed Tomography Scans
+# CT2CT: Resolution Augmentation of Computed Tomography (CT) Scans
 
 ## Abstract
 The reconstruction of 3D encephala requires to perform the patient a Computed Tomography exam so that "slices" or sections of their head are obtained. The use of conventional systems usually extracts between 100 and 300 slices per patient, higher numbers would imply a longer exposure of the patient to major levels of radiation.
