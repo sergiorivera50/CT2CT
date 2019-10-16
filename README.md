@@ -1,4 +1,4 @@
-# CT2CT by Sergio Rivera
+# CT2CT by Sergio Rivera - 16/10/2019
 - If you want to read the Spanish version [click here](#spanish-version)
 - Si quieres leer la versión en Español [haz click aquí](#spanish-version)
 
