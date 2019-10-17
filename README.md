@@ -36,7 +36,7 @@ All parameters, like "PATHS", "epochs" or "slices" can be modified in the first 
 
 ## 🧔How can I use CT2CT?
 It is recommended to use the default scanner (rawIMG, download zip folder included in this repository and upload the images to Drive, if you don't want to touch the code upload it to a folder like this: /brain_ct/PATIENT/rawIMG, this path is registered in code and can be changed in the variable RAW_PATH). If you prefer to use your own scans then this instructions must be followed:
-  1. Add the images to the rawIMG folder under the names /IMG-0001-XXXX.jpg being X the number of the slice (i.e. /IMG-0001-0123.jpg).
+  1. Add the images to the rawIMG folder under the names /IMG-0001-XXXXX.jpg being X the number of the slice (i.e. /IMG-0001-01234.jpg).
   2. Change the parameter "slices" to the number of images previously uploaded to the rawIMG folder in Drive.
 
 The software outputs a completely new scan generated in brain_ct/results. 
@@ -94,7 +94,7 @@ Todos los parámetros como los PATHS, epochs o slices del escaner pueden ser mod
 
 ## 🧔Como puedo usarlo yo?
 Es recomendable utilizar el escaner por defecto (rawIMG, descargar carpeta zip incluida en el repositorio y subir a Drive las imágenes al RAW_PATH: /brain_ct/PATIENT/rawIMG) ya que esto es un proyecto no comercial. Pero si se desea hacer pruebas con otros escáneres habrá que seguir las siguientes instrucciones:
-  1. Añadir las imágenes a la carpeta rawIMG bajo el nombre /IMG-0001-XXXX.jpg siendo X el número de capa (ej, /IMG-0001-0214.jpg)
+  1. Añadir las imágenes a la carpeta rawIMG bajo el nombre /IMG-0001-XXXXX.jpg siendo X el número de capa (ej, /IMG-0001-01234.jpg)
   2. Cambiar el parámetro "slices" al número de imágenes previamente introducidas en la carpeta rawIMG.
 
 El software obtiene como output un escáner totalmente generado en brain_ct/results.
