@@ -1,4 +1,5 @@
 # CT2CT by Sergio Rivera - 16/10/2019
+This project participated and was mentioned in the famous AI YouTube channel DotCSV! [link](https://www.youtube.com/watch?v=BerOC6n8j9Q&t=1026s)
 - If you want to read the Spanish version [click here](#spanish-version)
 - Si quieres leer la versión en Español [haz click aquí](#spanish-version)
 
