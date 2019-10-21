@@ -45,6 +45,26 @@ It is recommended to use the default scanner (rawIMG, download zip folder includ
 The software outputs a completely new scan generated in brain_ct/results. 
 This is the final output (known slices with predictions in between).
 
+## Current folder structure
+```
+brain_ct (master folder)
+  |  
+  |__ generatedScan (B_prediction + C_prediction + ...)
+  |
+  |__ results (definitive output, A + B_prediction + B + C_prediction + ...)
+  |
+  |__ scan_dataset (temporary storage of X = A x B)
+  |
+  |__ PATIENT
+        |
+        |__ rawIMG (/IMG-0001-XXXXX.jpg original scan)
+        |
+        |__ inputIMG (X = A x B)
+        |
+        |__ outputIMG (B + C + ...)
+        |
+        |__ attempts (test dataset results, 5 random frames)
+```
 ## ❗Google Colaboratory
 The code has been written in Google Colaboratory. Future updates will come in order to improve the user experience and try to make it user-friendly having in mind non-developers.
 These are the parameters of the environment:
@@ -102,6 +122,26 @@ Es recomendable utilizar el escaner por defecto (rawIMG, descargar carpeta zip i
 
 El software obtiene como output un escáner totalmente generado en brain_ct/results.
 
+## Estructura actual de los archivos
+```
+brain_ct (carpeta madre)
+  |  
+  |__ generatedScan (B_predecida + C_predecida + ...)
+  | 
+  |__ results (output definitivo, A + B_predecida + B + C_predecida + ...)
+  | 
+  |__ scan_dataset (almacenamiento temporal de X = A x B)
+  | 
+  |__ PATIENT
+        | 
+        |__ rawIMG (/IMG-0001-XXXXX.jpg escáner original)
+        | 
+        |__ inputIMG (X = A x B)
+        | 
+        |__ outputIMG (B + C + ...)
+        |  
+        |__ attempts (resultado del dataset test, 5 frames aleatorios)
+```
 ## ❗Google Colaboratory
 El código está programado para que su uso sea en el entorno de Google Colaboratory. En el futuro se realizarán actualizaciones para mejorar la experiencia y que sea más facil el uso del software para usuarios no-desarrolladores.
 Estos son los parámetros del entorno:
