@@ -10,9 +10,9 @@ This project participated and was mentioned in the AI YouTube channel DotCSV! [l
 
 ## 📝Abstract
 The reconstruction of 3D encephala requires to perform the patient a Computed Tomography exam so that "slices" or sections of their head are obtained. The use of conventional systems usually extracts between 100 and 300 slices per patient, higher numbers would imply a longer exposure of the patient to major levels of radiation.
-Using the CT2CT system (based on Pix2Pix technology), it is now achieved a higher number of inner slices of the encephalon only by scanning specific "key slices" that allow the model to predict the non-scanned slices in between them. This way, the time of exposure to radiation gets reduced significantly and the number of 2D slices raises for a better reconstruction of the 3D representation of the patient's head.
+Using the CT2CT system (based on Pix2Pix technology), it is now achieved a higher number of inner slices of the encephalon only by scanning specific "key slices" that allow the model to predict the non-scanned slices in between them. This way, the time of exposure to radiation gets reduced significantly and the number of 2D slices can even be increased by a factor of 10 for a better reconstruction of the 3D representation of the patient's head (in this documentation data was increased by a factor of 2 for demonstration purposes).
 
-Original complete scan | Original Slices + Predictions
+Original complete scan (240 frames) | Original Slices + Predictions (480 frames)
 ---------------------- | -----------------------------
 ![Original Scan gif](/assets/original.gif) | ![Predicted Scan gif](/assets/results.gif)
 
@@ -90,7 +90,11 @@ During the process of the development of this software some interesting ideas ha
 
 ## 📝Abstracto
 La reconstrucción 3D de encéfalos requiere de realizar un examen CT de Tomografía Computada al paciente para así obtener "capas" o secciones de la cabeza del individuo. Mediante sistemas convencionales se suelen extraer entre 100 y 300 capas por paciente, ya que números superiores implicarían una prolongación de la exposición del paciente a niveles de radiación importantes.
-Mediante el sistema CT2CT (basado en la tecnología Pix2Pix), se consigue aumentar radicalmente el número de capas internas del encéfalo con tan solo el escaneo de unos "key slices" o capas clave que permiten al modelo predecir las capas que no se han escaneado. De esta manera se reduce el tiempo de exposición del paciente a la radiación y se aumenta el número de capas 2D para la reconstrucción 3D del encéfalo.
+Mediante el sistema CT2CT (basado en la tecnología Pix2Pix), se consigue aumentar radicalmente el número de capas internas del encéfalo con tan solo el escaneo de unos "key slices" o capas clave que permiten al modelo predecir las capas que no se han escaneado. De esta manera se reduce el tiempo de exposición del paciente a la radiación y se puede llegar a aumentar el número de capas 2D incluso 10 veces el número de frames originales para la reconstrucción 3D del encéfalo (en esta documentación se ha utilizado un aumento del doble con el propósito de demonstrar el algoritmo).
+
+Escáner original (240 frames) | Capas originales + Predecidas (480 frames)
+---------------------- | -----------------------------
+![Escáner original gif](/assets/original.gif) | ![Escáner predecido gif](/assets/results.gif)
 
 ## ⚙️Como funciona?
 El modelo CT2CT obtiene capas intermedias de escaneos CT desconocidas para aumentar la resolución de las reconstrucciones 3D encefálicas sin necesidad de aumentar el tiempo de los exámenes médicos y, por ende, de exposición a la radiación.
