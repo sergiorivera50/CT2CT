@@ -3,7 +3,7 @@
 - If you want to read the Spanish version click [here](#spanish-version)
 - Si quieres leer la versión en Español haz click [aquí](#spanish-version)
 
-This project was mentioned in the AI YouTube channel DotCSV! [link](https://youtu.be/BerOC6n8j9Q?t=1011) to the video
+This project was mentioned in the AI YouTube channel DotCSV! ([link](https://youtu.be/BerOC6n8j9Q?t=1011) to the video)
 
 # 💂‍♂️ENGLISH VERSION
 # CT2CT: Resolution Augmentation of Computed Tomography (CT) Scans
