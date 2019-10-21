@@ -12,6 +12,10 @@ This project participated and was mentioned in the AI YouTube channel DotCSV! [l
 The reconstruction of 3D encephala requires to perform the patient a Computed Tomography exam so that "slices" or sections of their head are obtained. The use of conventional systems usually extracts between 100 and 300 slices per patient, higher numbers would imply a longer exposure of the patient to major levels of radiation.
 Using the CT2CT system (based on Pix2Pix technology), it is now achieved a higher number of inner slices of the encephalon only by scanning specific "key slices" that allow the model to predict the non-scanned slices in between them. This way, the time of exposure to radiation gets reduced significantly and the number of 2D slices raises for a better reconstruction of the 3D representation of the patient's head.
 
+Original complete scan | Original Slices + Predictions
+---------------------- | -----------------------------
+![Original Scan gif](/assets/original.gif) | ![Predicted Scan gif](/assets/results.gif)
+
 ## ⚙️How it works?
 The CT2CT model obtains un-scanned intermediate layers from known scanned ones in order to augment the resolution of the 3D reconstruction of enchapla without requiring the patient to stay longer times exposed to radiation during medical exams.
 Medicine is a field where accuracy is of extreme importance, the CT2CT model has to be retrained every time the target patient changes. This facilitates the AI to adapt to the new intrinsic patterns of the nature of the encephalon of the new patient without mixing previous brain structures of other patients. Once the training has been completed for one target patient, predictions of the brain structure of that patient can be asked to the model as many times as required (bearing in mind that little errors always add up) without having to repeat training constantly.
