@@ -28,7 +28,7 @@ Layer A | Layer B | Layer C
 -------|--------|--------
 ![Layer A](/assets/A.jpg) | ![Layer B](/assets/B.jpg) | ![Layer C](/assets/C.jpg)
 
-This way, the generator learns how to create images of intermediate slices of the encephalon since the information of A and C is condensed in the multiplication of both images (X).
+This way, the generator learns how to create images of intermediate slices of the encephalon since the information of A and C is contained in the multiplication of both images (X).
 
 Input AxC | Prediction (100 epochs) | Prediction (500 epochs)
 ----------|-------------------------|------------------------
