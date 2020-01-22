@@ -1,5 +1,5 @@
 # CT2CT by Sergio Rivera - 2020/01/22
-# Version 0.1.0-alpha
+# Version 0.1.0-alpha -> [changelog](/changelog.md)
 
 - If you want to read the Spanish version click [here](#spanish-version)
 - Si quieres leer la versión en Español haz click [aquí](#spanish-version)
