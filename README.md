@@ -34,29 +34,15 @@ Input AmC | Prediction (10 epochs) | Prediction (50 epochs)
 ----------|-------------------------|------------------------
 ![Image AmC](/assets/AmC.jpg) | ![Prediction 10 epochs](/assets/B_10e.jpg) | ![Prediction 50 epochs](/assets/B_50.jpg)
 
-The model has been designed so that it only requires less than 100 slices (all results shown have been generated with only 80 images of training). 50 epochs have demonstrated a huge capacity of prediction.
+The model has been designed so that it only requires less than 100 slices (all results shown have been generated with only 80 images of training). 50 epochs have demonstrated a huge capacity for prediction.
 
 ## ✅Evaluation
 CT2CT uses 20% (20 images in shown results) of the images of the dataset for evaluating the model.
 
 ## 🧔How can I use CT2CT?
-Support for custom scans is possible but not easy to use unless you know how the code works. That feature will be added in a near future but you can follow a step-by-step guide in the CT2CT.ipynb to train a model, see the results, and save the model.
+Support for custom scans is possible but not easy to use unless you know how the code works. That feature will be added in a near future but you can follow a step-by-step guide in the CT2CT.ipynb to train a model, understand the process, see the results, and save the model.
 I am currently developing the user-friendly dekstop version for getting a complete predicted scan.
 
-## Current folder structure
-```
-brain_ct (master folder)
-  |
-  |__ PATIENT
-        |
-        |__ rawIMG (original scan)
-        |
-        |__ inputIMG (generated AmC)
-        |
-        |__ outputIMG (targets for AmC, B)
-        |
-        |__ attempts (test dataset results, 5 random frames)
-```
 ## ❗Google Colaboratory
 The code has been written in Google Colaboratory. If you want to use this software, please open CT2CT.ipynb in Google Colaboratory.
 
@@ -101,29 +87,12 @@ Input AuC | Predicción (10 epochs) | Predicción (50 epochs)
 El modelo ha sido diseñado para que solo requiera de tan solo 80 imágenes de entrenamiento para que sea útil para la gran mayoría de escaneos CT. 50 epochs han demostrado una gran capacidad de predicción.
 
 ## ✅Evaluación
-CT2CT utiliza 20 imágenes para la evaluación del modelo que jamás han sido previamente conocidas extraídas del propio escáner original.
+CT2CT utiliza el 20% del dataset para la evaluación del modelo que jamás han sido previamente conocidas extraídas del propio escáner original.
 
 ## 🧔Como puedo usarlo yo?
-Support for custom scans is possible but not easy to use unless you know how the code works. That feature will be added in a near future but you can follow a step-by-step guide opening CT2CT.ipynb in Google Collaboratory to train a model, see the results and save the trained model.
-I am currently developing the user-friendly dekstop version for getting a complete predicted scan.
-
 Por el momento no es fácil de utilizar tus propios scans a no ser que entiendas el código. Esta funcionalidad será añadida en un futuro cercando pero puedes seguir la guía paso-por-paso abriendo CT2CT.ipyinb en Google Collaboratory para entrenar un modelo, ver los resultados y guardar el modelo entrenado.
-Estoy desarrollando una aplicación de escritorio para utilizar este software y conseguir un scan predecido al completo.
+Ahora mismo estoy desarrollando la aplicación de escritorio que permitirá conseguir un scan predecido al completo.
 
-## Estructura actual de los archivos
-```
-brain_ct (carpeta madre)
-  |  
-  |__ PATIENT
-        | 
-        |__ rawIMG (escáner original)
-        | 
-        |__ inputIMG (AuC generado)
-        | 
-        |__ outputIMG (target de AuC, B)
-        |  
-        |__ attempts (resultado del dataset test, 5 frames aleatorios)
-```
 ## ❗Google Colaboratory
 El código está programado en Google Colaboratory. Si desesa utilizar este software, abra CT2CT.ipynb en Google Colaboratory.
 
