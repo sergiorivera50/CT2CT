@@ -1,18 +1,18 @@
 # Changelog
 ## Unreleased
-- Desktop version for querying the model and get a complete reconstructed scan.
+- **Desktop version** for querying the model and get a complete reconstructed scan.
 
 ## 0.1.0-alpha - 2020-01-22
 ### Added
-- Save and Load CT2CT models into/from a single file.
+- **Save** and **Load** CT2CT models into/from a single file.
 
 ### Changed
-- Performance has substantially increased.
-- CT2CT.ipynb is now easier to understand with a step-by-step explanation of each cell.
-- Images don't have to be stored in google drive anymore.
+- **Performance** has substantially increased.
+- CT2CT.ipynb is now easier to understand with a **step-by-step** explanation of each cell.
+- **Images don't have to be stored in google drive anymore**.
 - No longer necessary to download default scan as is retrieved automatically via code.
-- Merging images for input has been improved with a different formula (no more pixel multiplication).
-- Images are now single channel (grey scale) rather than multi-channel (colored) as it improves training.
+- **Merging images** for input has been improved with a different formula (no more pixel multiplication).
+- Images are now **single channel (grey scale)** rather than multi-channel (colored) as it improves training.
 - Documentation has also been improved.
 
 ### Removed
