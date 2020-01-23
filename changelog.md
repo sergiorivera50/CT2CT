@@ -7,12 +7,16 @@
 - Save and Load CT2CT models into/from a single file.
 
 ### Changed
+- Performance has substantially increased.
+- CT2CT.ipynb is now easier to understand with a step-by-step explanation of each cell.
+- Images don't have to be stored in google drive anymore.
+- No longer necessary to download default scan as is retrieved automatically via code.
 - Merging images for input has been improved with a different formula (no more pixel multiplication).
 - Images are now single channel (grey scale) rather than multi-channel (colored) as it improves training.
-- Code has been rewritten so it is easier to read.
-- Notebook has a clear step-by-step guidance for training and testing.
 - Documentation has also been improved.
 
 ### Removed
-- Support for complete scan prediction as it will be added with the querying desktop version.
+- Storing generated input/target as well as raw scan images in google drive. Now they are stored in code.
+- Therefore, folders /inputIMG, /outputIMG and /rawIMG have been removed.
+- Support for complete scan prediction, it will be added when the querying desktop version is ready.
 - Therefore, folders /generatedScan, /results and /scan_dataset have been removed.
