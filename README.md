@@ -33,6 +33,7 @@ This way, the generator learns how to create images of intermediate slices of th
 Input AmC | Prediction (10 epochs)[X] | Prediction (50 epochs)[X]
 ----------|-------------------------|------------------------
 ![Image AmC](/assets/AmC.jpg) | ![Prediction 10 epochs](/assets/B_10e.jpg) | ![Prediction 50 epochs](/assets/B_50e.jpg)
+
 [X]: Generated from other AmC not showed here.
 
 The model has been designed so that it only requires less than 100 slices (all results shown have been generated with only 80 images of training). 50 epochs have demonstrated a huge capacity for prediction.
@@ -84,6 +85,7 @@ De esta manera, el generador aprende a crear imágenes de capas intermedias del 
 Input AuC | Predicción (10 epochs)[X] | Predicción (50 epochs)[X]
 ----------|-------------------------|------------------------
 ![Imagen AuC](/assets/AmC.jpg) | ![Predicción 10 epochs](/assets/B_10e.jpg) | ![Predicción 50 epochs](/assets/B_50e.jpg)
+
 [X]: Generado por otro AuC no mostrado aquí.
 
 El modelo ha sido diseñado para que solo requiera de tan solo 80 imágenes de entrenamiento para que sea útil para la gran mayoría de escaneos CT. 50 epochs han demostrado una gran capacidad de predicción.
