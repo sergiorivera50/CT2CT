@@ -18,7 +18,7 @@ Original complete scan (240 frames) | Original Slices + Predictions (480 frames,
 ![Original Scan gif](/assets/original.gif) | ![Predicted Scan gif](/assets/results.gif)
 
 ## ⚙️How it works?
-The CT2CT model obtains un-scanned intermediate layers from known scanned ones in order to augment the resolution of the 3D reconstruction of enchapla without requiring the patient to stay longer times exposed to radiation during medical exams.
+The CT2CT model obtains non-scanned intermediate layers from known scanned ones in order to augment the resolution of the 3D reconstruction of enchapla without requiring the patient to stay longer times exposed to radiation during medical exams.
 Once the training has been completed, predictions of the brain structure of a patient can be asked to the model as many times as required (bearing in mind that little errors always add up).
 
 ## 🏋️Training
