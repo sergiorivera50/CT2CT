@@ -1,4 +1,4 @@
-# CT2CT by Sergio Rivera - 2020/01/22
+# CT2CT: Pix2Pix Models applied to Data Augmentation in CT Scan Settings
 # Version 0.1.0-alpha -> [changelog](/changelog.md)
 
 - If you want to read the Spanish version click [here](#spanish-version)
